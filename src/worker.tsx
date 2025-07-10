@@ -21,22 +21,6 @@ export default defineApp([
     await setupDb(env);
     setupSessionStore(env);
 
-    try {
-      ctx.session = await sessions.load(request);
-    } catch (error) {
-      if (error instanceof ErrorResponse && error.code === 401) {
-        await sessions.remove(request, headers);
-        headers.set("Location", "/user/login");
-
-        return new Response(null, {
-          status: 302,
-          headers,
-        });
-      }
-
-      throw error;
-    }
-
     if (ctx.session?.userId) {
       ctx.user = await db.user.findUnique({
         where: {

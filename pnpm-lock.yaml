@@ -26,8 +26,8 @@ dependencies:
     specifier: ^13.1.1
     version: 13.1.2
   rwsdk:
-    specifier: 0.1.11
-    version: 0.1.11(typescript@5.8.3)(vite@6.3.5)(webpack@5.99.9)
+    specifier: 0.1.14
+    version: 0.1.14(typescript@5.8.3)(vite@6.3.5)(webpack@5.99.9)
 
 devDependencies:
   '@cloudflare/vite-plugin':
@@ -2980,8 +2980,8 @@ packages:
       queue-microtask: 1.2.3
     dev: false
 
-  /rwsdk@0.1.11(typescript@5.8.3)(vite@6.3.5)(webpack@5.99.9):
-    resolution: {integrity: sha512-G9jWO8+ZsGsBC0hXucrpUAz2eP0gmOrw4vCmTDAxkSJaIF1MeILpP1at4euMxY6uRulK/Ztlj3RKFT3gozBuXg==}
+  /rwsdk@0.1.14(typescript@5.8.3)(vite@6.3.5)(webpack@5.99.9):
+    resolution: {integrity: sha512-Q+VTQULP5f6TaOSoNPhIZb4bkuFSOlTnhSivo1qMUo2qqGTlnaTjmP+NvJC4SFRf/K6eOZk6w1mCSh3MPKyspw==}
     hasBin: true
     peerDependencies:
       vite: ^6.2.6
